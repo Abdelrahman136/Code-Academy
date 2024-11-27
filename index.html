@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بدرش جافاسكربت | JS Badrash</title>
+    <link rel="stylesheet" href="css/ExampleProductHtml.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="imgs/jquery-3.7.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        div.style {
+            display: none;
+        }
+
+        /* div.style {
+
+            width: 100%;
+        }
+        button.style-btn:hover > div.style {
+            display: block;
+        }
+        button.style-btn:hover {
+            width: 80%;
+            text-align: left;
+        } */
+    </style>
+</head>
+<body dir="rtl">
+    <header>
+        <nav>
+            <div class="academy-name"><h1>سلسلة <span class="Inventor">المخترع الصغير</span> <span> لتعلم لغة <span class="Inventor2">الجافاسكريبت</span></h1></div>
+            <div class="academy-links">
+                <ul>
+                    <li><a href="#"><img class="logo2" src="imgs/1714420016749.jfif"></a></li>
+                    <li class="parent-categories"><a class="contenet-list" href="#" onclick="
+                    $('li.parent-categories').click(function() {
+                        $(this).siblings('ul.categories').toggle();
+                    });
+                    $('a.contenet-list').click(function() {
+                        $(this).siblings('ul.categories').toggle();
+                    });
+                    ">المحتوى</a>
+                        <ul class="categories">
+                            <li><a href="#content-html">HTML</a></li>
+                            <li><a href="#content-css">CSS</a></li>
+                            <li><a href="#content-js">JavaScript</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li><a href="#">أمثلة عملية</a></li>
+                    <li><a href="#">أمثلة متقدمة</a></li>
+                    <li><a href="#">إختبارات</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="banner-title">
+                <div class="banner-title-container">
+                    <div style="direction: rtl;" class="arabic">
+                        سلسلة <span> المخترع</span> لتعلم لغة <span>جافاسكربت</span> </h1>    
+                    </div>
+                    <div>
+                        <span class="mark">Learning JavaScript</span> <span class="white">Language</span> <br>
+                        <span class="mark bigger"> { From Inventor </span> <span class="smaller"><div>Abdelrahman </div> <div>Ahmed</div></span></span><br>
+                        <span class="mark bigger">Material } </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="html">
+            <h1 class="h1" id="content-html"></h1>
+            <div class="basics">
+                <div class="basics-container" >
+                    <h2  class="h2">اساسيات لغة الاتش تي ام ال HTML</h2>
+                    <ul>
+                        <li class="dropdown"><h3>كيفية بناء بنية موقع الاتش تي ام ال رأس وجسم الصفحة | html structure</h3>
+                            <ol>
+                                <li class="dropdown2"><h4><span>html - head - body</span></h4>
+                                    <ol type="I">
+                                        <li>
+                                                &lthtml&gt <br>
+                                                &nbsp; &nbsp; &nbsp; &lthead&gt <br> <br>
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lttitle&gt عنوان | Title &lt/title&gt <br>
+                                                &nbsp; &nbsp; &nbsp; &lt/head&gt <br>
+                                                &nbsp; &nbsp; &nbsp; &ltbody&gt <br> 
+                                                <h1 style="font-size: 1.8em;">&nbsp; &nbsp; &nbsp; &lth1&gt عنوان رئيسي | heading &lt/h1&gt </h1> <br>
+                                                <h2 style="font-size: 1.55em;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lth2&gt عنوان رئيسي | heading &lt/h2&gt </h2> <br>
+                                                <h3 style="font-size: 1.35em; border: none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lth3&gt عنوان فرعي | heading &lt/h3&gt </h3> <br>
+                                                <h4 style="font-size: 1.15em;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lth4&gt عنوان متفرع | heading &lt/h4&gt </h4> <br>
+                                                <h5 style="font-size: 0.1em;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    &nbsp; &nbsp; &nbsp;  &lth5&gt عنوان اصغر | heading &lt/h5&gt </h5> <br>
+                                                <h6 style="font-size: 0.85em;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lth6&gt عنوان اصغر | heading &lt/h6&gt </h6> <br>
+                                                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &ltp&gt فقرة | paragraph &lt/p&gt </p> <br>
+                                                
+                                                &nbsp; &nbsp; &nbsp; &lt/body&gt <br>
+                                                &lt/html&gt <br>
+                                        </li>
+                                        <li>Example
+                                            <br>
+                                            &lt;div class="product-detail"&gt; <br>
+                                                &nbsp; &nbsp; &lt;div class="product-image"&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src="imgs/812d27b1-a567-4476-bb09-374b23acbef8.avif" alt="Product Image"&gt; <br>
+                                                &nbsp; &nbsp;&lt;/div&gt;<br>
+                                                &nbsp; &nbsp; &lt;div class="product-info"&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;h1 class="product-title"&gt;طقم تيشيرت وشورت مزين بشعار الماركة للأطفال&lt;/h1&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class="product-price"&gt;$49.00&lt;/p&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class="product-description"&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;تسوق آمن <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;بياناتك محمية دائماً <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;إرجاع مجاني <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;على منتجات معينة ومجاناً <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;شحن موثوق به <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;توصيل مجاني عند شراء منتجات نون إكسبرس بـ 100 ريال أو أكثر <br>                                   
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;/p&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;span&gt;(4.5/5)&lt;/span&gt; <br>
+                                        
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;button class="add-to-cart">Add to Cart&lt;/button&gt; <br>
+                                                &nbsp; &nbsp; &lt;/div&gt; <br>
+                                            &lt;/div&gt; <br>
+                                            <span class="result">
+
+                                                <div class="product-detail">
+                                                    <div class="product-image">
+                                                        <img src="imgs/812d27b1-a567-4476-bb09-374b23acbef8.avif" alt="Product Image">
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h1 class="product-title">طقم تيشيرت وشورت مزين بشعار الماركة للأطفال</h1>
+                                                        <p class="product-price">$49.00</p>
+                                                        <p class="product-description">
+                                                            تسوق آمن <br>
+                                                            بياناتك محمية دائماً <br>
+                                                            إرجاع مجاني <br>
+                                                            على منتجات معينة ومجاناً <br>
+                                                            شحن موثوق به <br>
+                                                            توصيل مجاني عند شراء منتجات نون إكسبرس بـ 100 ريال أو أكثر <br>
+                                                        </p>
+                                                        <div class="product-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <i class="fa fa-star-o"></i>
+                                                            <span>(4.5/5)</span>   
+                                            
+                                                        </div>
+                                                        <button class="add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                </div>
+
+                                            </span>
+                                        </li>
+                                        <li>Test
+                                            <br>
+                                            <span class="test">هظهر ليك جزء من صفحة واكتب عناصره بالأتش تي ام ال اللي اتعلمتها
+                                                العناوين تعملها الفقرات تظبطها أكبر عنوان يبقى h1 عنوان اصغر يبقى h2 او ا3
+                                                وكدا في صورة فيه لينك حاول تعمل الشكل اللي هو منسق بال سي اس اس بال html 
+                                                الهدف تلاقي نفسك بتعمل حاجة حقيقة زي اللي في السوق وعلى المواقع الكبيرة
+                                                <br>
+                                                <img width="100%" src="imgs/task2Html.PNG" alt="">
+                                            </span>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!-- <li class="dropdown2"><h4><span>window.confirm()</span></h4>
+                                
+                                </li>
+                                <li class="dropdown2"><h4><span>console.log()</span></h4>
+                                
+                                </li>
+                                <li class="dropdown2"><h4><span>document.write()</span></h4>
+                                
+                                </li>
+                                <li class="dropdown2"><h4><span>innerHTML</span></h4>
+                                
+                                </li> -->
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3> كيفية التعديل على النصوص من خلال وضع خط أو جعل كلمة سميكة مع القوائم | ul | ol | dl</h3>
+                            <ol>
+                                <li class="dropdown2"><h4><span>
+                                    /* قائمة | list */ <br>
+                                 </span></h4>
+                                    <ol type="I">
+                                        <li>&lt;ul&gt;  /* قائمة غير مرتبة | unordered list */ /* {ol} مرتبة */ /* {dl} وصفية */ <br>
+                                    &nbsp; &nbsp; &lt;li&gt; &lt;/li&gt; /* عنصر داخل القائمة | list item */ <br>
+                                    &nbsp; &nbsp; &lt;li&gt; &lt;/li&gt; /* عنصر داخل القائمة | list item */ <br>
+                                    &nbsp; &nbsp; &lt;li&gt; &lt;/li&gt; /* عنصر داخل القائمة | list item */ <br>
+                                    &lt;/ul&gt; <br></li>
+                                        <li>Example <br>
+                                            /* HTML */ <br>
+                                            &lt;nav&gt; <br>
+                                                &nbsp; &nbsp; &lt;ul&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &lt;/ul&gt; <br>
+                                            &lt;/nav&gt; <br>
+                                            /* ******************* */ <br>
+                                            <span class="result">
+                                                <img src="imgs/task3Html.PNG" width="100%" alt="">
+                                                <!-- here
+                                                <nav class="example">
+                                                    nav example
+                                                    <ul>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">About</a></li>
+                                                        <li><a href="#">Services</a></li>
+                                                        <li><a href="#">Contact</a></li>
+                                                    </ul>
+                                                </nav> -->
+                                            </span>
+                                            
+                                            <button class="style-btn">/* CSS Style */
+                                            
+                                                
+                                            </button> <br>
+                                            
+                                            <div class="style">
+                                                nav ul { <br>
+                                                    list-style-type: none; <br>
+                                                    margin: 0; <br>
+                                                    padding: 0; <br>
+                                                    overflow: hidden; <br>
+                                                    background-color: #333; <br>
+                                                } <br> <br>
+                                                
+                                                nav li { <br>
+                                                    float: left; <br>
+                                                } <br> <br>
+                                                
+                                                nav li a { <br>
+                                                    display: block; <br>
+                                                    color: white; <br>
+                                                    text-align: center; <br>
+                                                    padding: 14px 16px; <br>
+                                                    text-decoration: none; <br>
+                                                } <br> <br>
+                                                
+                                                nav li a:hover { <br>
+                                                    background-color: #111; <br>
+                                                } <br> <br>
+    
+                                            </div>
+                                            
+                                        </li>
+                                        <li>Test
+                                            <br>
+                                            <span class="test">طبق هذا المثال حاول تعمل 
+                                                sidebar <br>
+                                                او اللينكات بشكل جانبي كما تظهر في كثير 
+                                                من المواقع بطريقة احترافية
+                                                <br>
+                                                <img src="imgs/task33Html.PNG" width="100%" alt="">
+                                                جرب تعمل قائمة مرتبة بال ol <br>
+                                                واعمل ترتيب أكبر الدول من حيث المساحة أول أكبر 5 دول
+                                            </span>
+                                        </li>
+                                    </ol>
+
+                                <li class="dropdown2"><h4><span>قوائم داخل قوائم</span></h4>
+                                    <ol type="I">
+                                        <li>&lt;dl&gt; أقسام البرمجة <br>
+                                                    &nbsp; &nbsp; &lt;dd&gt; الويب   <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;واجهات أمامية &lt;/a&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ol&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt; Html &lt;/li&gt;<br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt; CSS &lt;/li&gt;<br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt; Javascript &lt;/li&gt;<br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ol&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt; <br>
+
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;واجهات خلفية&lt;/a&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ol&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt; PHP &lt;/li&gt;<br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt; Laravel &lt;/li&gt;<br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt; MySql &lt;/li&gt;<br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ol&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;أمامية وخلفية&lt;/a&gt;&lt;/li&gt; <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt; <br>
+                                                    &nbsp; &nbsp; &lt;/dd&gt; <br>
+
+                                                    أكمل أنت المثال وأهم حاجة الفكرة
+                                                    &nbsp; &nbsp; &lt;dd&gt; الجرافيكس   <br>
+                                                    <!-- &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt; <br> -->
+                                                    <!-- &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt; <br> -->
+                                                    &nbsp; &nbsp; &lt;/ul&gt; <br>
+                                                    &lt;/dd&gt; /* عنصر داخل القائمة | list item */ <br>
+                                                    &nbsp; &nbsp; &lt;dd&gt; الجرافيكس &lt;/dd&gt; /* عنصر داخل القائمة | list item */ <br>
+                                                    &nbsp; &nbsp; &lt;dd&gt; الذكاء الإصطناعي &lt;/dd&gt; /* عنصر داخل القائمة | list item */ <br>
+                                                    &lt;/dl&gt; <br>
+                                                    <span class="result">
+                                                        <img src="imgs/task4Html.PNG" width="100%">
+                                                    </span>
+                                                </li>
+
+                                        <li>Example <br>
+                                            /* HTML */ <br>
+                                            طبق أنت بقى المثال ده واللي بعده
+                                            /* ******************* */ <br>
+                                            <span class="result">
+                                                <img src="imgs/task444Html.PNG" width="100%" alt="">
+                                                
+                                            </span>
+                                            
+                    
+                                            
+                                        </li>
+                                        <li>Test
+                                            <br>
+                                            <span class="test">طبق هذا المثال حاول تعمل 
+                                                sidebar <br>
+                                                او اللينكات بشكل جانبي كما تظهر في كثير 
+                                                من المواقع بطريقة احترافية
+                                                <br>
+                                                <img src="imgs/task55Html.PNG" width="100%" alt="">
+                                                جرب تعمل قائمة مرتبة بال ol <br>
+                                                واعمل ترتيب أكبر الدول من حيث المساحة أول أكبر 5 دول
+                                            </span>
+                                        </li>
+                                    </ol>
+                                </li>
+                                
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>اضافة لينكات و صور وفيديوهات وصوت في موقعي | a - img - vedio - audio</h3>
+                            <ol>
+                                <li class="dropdown2"><h4><span>
+                                    &lt;img src="{مكان الصورة}" alt="{وصف الصورة}"&gt; <br>
+                                    &lt;a href="\* الوجهة *\" target="\* _blank يفتح في تاب جديدة*\"&gt; <br>
+                                </span></h4>
+                                <ol type="I">
+                                    &lt;img src="image.png" alt="صورة كذا"&gt; <br>
+                                    &lt;a href="https://www.youtube.com/@AbdelrahmanAhmed-Inventor" target="_blank"&gt;قناتي برا المنهج&lt;/a&gt; <br>
+                                    &lt;a href="https://www.youtube.com/@AbdelrahmanAhmed-Inventor" target="_blank"&gt; <br>
+                                    &lt;img src="img/Barachannels4_banner.jpg" alt="صورة كذا"&gt; <br> /* اللينك هي الصورة تضغط وتذهب بك الى المكان */
+                                    &lt;/a&gt; <br>
+                                        
+                                        <span class="result">
+                                            <img src="imgs/ai-generated-8684869_640.jpg" width="100%"> <br>
+                                            <a style="display: inline-block;" href="https://www.youtube.com/@AbdelrahmanAhmed-Inventor">قناتي برا المنهج</a>
+                                            <a style="display: inline-block;" href="https://www.youtube.com/@AbdelrahmanAhmed-Inventor">
+                                                <img width="100px" src="imgs/Barachannels4_banner.jpg" alt="قناتي برا المنهج">
+                                            </a>
+                                        </span>
+                                    </li>
+
+                                    <li>Example <br>
+                                        /* HTML */ <br>
+                                        طبق أنت بقى المثال ده واللي بعده
+                                        /* ******************* */ <br>
+                                        <span class="result">
+                                            <img src="imgs/task66Html.PNG" width="100%" alt="">
+                                            
+                                        </span>
+                                            
+                    
+                                            
+                                        </li>
+                                        <li>Test
+                                            <br>
+                                            <span class="test">طبق هذا المثال حاول تعمل 
+                                                صور بجانب بعض <br>
+                                                من موقع الكتب الشهير نور  
+                                                <br>
+                                                <img src="imgs/task77Html.PNG" width="100%" alt="">
+                                                كل مرة طبق نفس المثال او مشابه ليه بخصائص ال css مستقبلا <br>
+                                            </span>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>&lt;vedio controls loop autoplay muted&gt; &lt;source&gt; src="لينك الفيديو أو مكانه ومصدره فين" &lt;/source&gt; &lt;/vedio&gt;
+                                    <li class="dropdown2"><h4><span>
+                                        &lt;vedio controls muted loop autoplay &gt; <br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &lt;source src="{مصدر الفيديو}" &gt; <br>
+                                        &lt;/vedio&gt; <br>
+                                        
+                                    </span></h4>
+                                    <ol type="I">
+                                        &lt;video controls muted loop autoplay width="100%"&gt; <br>
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &gt;source src="videos/0502 (1).mp4"&gt; <br>
+                                        &lt;/video&gt; <br>
+                                            
+                                            <span class="result">
+                                                <video  muted loop autoplay width="50%" height="50%">
+                                                    <source src="videos/0502 (1).mp4">
+                                                </video>
+                                            </span>
+                                        </li>
+    
+                                        <li>Example <br>
+                                            /* HTML */ <br>
+                                            طبق أنت بقى المثال ده واللي بعده
+                                            /* ******************* */ <br>
+                                            <span class="result">
+                                                <video controls muted loop autoplay width="50%" height="50%">
+                                                    <source src="videos/oppo_0(23).mp4">
+                                                </video>
+                                                
+                                            </span>
+                                                
+                        
+                                                
+                                            </li>
+                                            <li>Test
+                                                <br>
+                                                <span class="test">طبق هذا المثال حاول تعمل  <br>
+                                                    <video controls muted loop autoplay width="48%">
+                                                        <source src="videos/oppo_0(23).mp4">
+                                                    </video>
+                                                    <video controls muted loop autoplay width="48%">
+                                                        <source src="videos/oppo_0(27).mp4">
+                                                    </video>
+                                                    <video controls muted loop autoplay width="48%">
+                                                        <source src="videos/oppo_0(29).mp4">
+                                                    </video>
+                                                    <video controls muted loop autoplay width="48%">
+                                                        <source src="videos/oppo_0(31).mp4">
+                                                    </video>
+                                                    <video controls muted loop autoplay width="48%" height="50%">
+                                                        <source src="videos/oppo_0(34).mp4">
+                                                    </video>
+                                                    <video controls muted loop autoplay width="48%" height="50%">
+                                                        <source src="videos/oppo_0(35).mp4">
+                                                    </video>
+                                                </span>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                                
+
+                                <!-- <li>&lt;audio controls loop autoplay muted&gt; &lt;source&gt; src="لينك الصوت أو مكانه ومصدره فين" &lt;/source&gt; &lt;/audio&gt; -->
+                                    <li class="dropdown2"><h4><span>
+                                        &lt;audio controls muted loop autoplay &gt; <br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &lt;source src="{مصدر الصوت}" &gt; <br>
+                                        &lt;/audio&gt; <br>
+                                        
+                                    </span></h4>
+                                    <ol type="I">
+                                        &lt;audio controls muted loop autoplay width="100%"&gt; <br>
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &gt;source src="audio/AUD-20220918-WA0102.mp3"&gt; <br>
+                                        &lt;/audio&gt; <br>
+                                        
+                                            <span class="result">
+                                                <audio controls muted loop autoplay width="50%" height="50%">
+                                                    <source src="audios/AUD-20220918-WA0102.mp3">
+                                                </audio>
+                                            </span>
+                                        </li>
+    
+                                        <li>Example <br>
+                                            /* HTML */ <br>
+                                            طبق أنت بقى المثال ده واللي بعده
+                                            /* ******************* */ <br>
+                                            <span class="result">
+                                                <audio controls muted loop autoplay width="50%" height="50%">
+                                                    <source src="audios/AUD-20221017-WA0000.mp3">
+                                                </audio>
+                                                
+                                            </span>
+                                                
+                        
+                                                
+                                            </li>
+                                            <li>Test
+                                                <br>
+                                                <span class="test">طبق هذا المثال حاول تعمل  <br>
+                                                    <audio controls muted loop autoplay width="48%">
+                                                        <source src="audios/AUD-20220918-WA0102.mp3">
+                                                    </audio>
+                                                    <audio controls muted loop autoplay width="48%">
+                                                        <source src="audios/AUD-20221017-WA0000.mp3">
+                                                    </audio>
+                                                    <audio controls muted loop autoplay width="48%">
+                                                        <source src="audios/AUD-20230821-WA0005.mp3">
+                                                    </audio>
+                                                    <audio controls muted loop autoplay width="48%">
+                                                        <source src="audios/AUD-20230918-WA0005.mp3">
+                                                    </audio>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    </ol>
+                                </li>
+                                <!-- <li>&lt;audio controls loop autoplay muted&gt; &lt;source&gt; src="لينك الفيديو أو مكانه ومصدره فين" &lt;/source&gt; &lt;/audio&gt; -->
+
+                                <!-- </li>                            </ol> -->
+                        
+                        
+                        <li class="dropdown"><h3>الجدول | table</h3>
+                            <ol>
+                                </li>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>الفورم | form</h3>
+                            <ol>
+                                <li>let {array_name}|=[value,value,value,...]</li>
+                            </ol>
+                        </li>
+                        <li  class="dropdown"><h3>موقع كامل متكامل | full website</h3>
+                            <ol>
+                            </ol>
+                        </li>
+                        <li  class="dropdown"><h3>اختبارات اختبر نفسك | tests & Excercices</h3>
+                            <ol>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="main-content">
+        <section class="css">
+            <h1 class="h1" id="content-css"></h1>
+            <div class="basics">
+                <div class="basics-container" >
+                    <h2 class="h2">اساسيات لغة السي اس اس CSS</h2>
+                    <ul>
+                        <li class="dropdown"><h3>تحديد عنصر سواء بال class | id او بالاسم + [margin|padding|width|heaight]</h3>
+                            <ol>
+                                
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3> الخلفية background-[color|image|size|repeat|attachment] </h3>
+                            <ol>
+                                
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>طرق العرض display[inline|block|inline-block] والاطار border: 1px solid red | border-raduis:50%</h3>
+                            <ol>
+                              
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>طريقة عرض قديمة float وطريقة عرض حديثة flex</h3>
+                            <ol>
+                                
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>التعديل على الكلمات والخطوط</h3>
+                            <ol>
+                            </ol>
+                        </li>
+                        <li  class="dropdown"><h3>طريقة عرض ال grid | animation</h3>
+                            <ol>
+                            </ol>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="main-content">
+        <section class="js">
+            <h1 class="h1" id="content-js"></h1>
+            <div class="basics">
+                <div class="basics-container" >
+                    <h2 class="h2">اساسيات لغة الجافاسكريبت</h2>
+                    <ul>
+                        <li class="dropdown"><h3>جمل لإعلام أو اظهار رسائل للمستخدم [جمل الإخراج] | Output Sentences</h3>
+                            <ol>
+                                <li class="dropdown2"><h4><span>window.alert()</span></h4>
+                                    <ol type="I">
+                                        <li>alert('Hello World!')</li>
+                                        <li>Example
+                                            <br>
+                                            let <span class="var">js</span> = 'JavaScript'; <br>
+                                            let <span class="var">myName</span> = 'Abdelrahman'; <br>
+                                            alert('This Website Says for & ' + <span class="var">myName</span> + ' *You Love ' + <span class="var">js</span>); <br>
+                                            <span class="result">This Website Says for & Abdelrahman *You Love JavaScript</span>
+                                        </li>
+                                        <li>Test
+                                            <br>
+                                            <span class="test">اعمل ثلاث متغيرات واحد للأسم والثاني للسن والثالث للهواية
+                                                واطبع رسالة زي كدا عربي أو إنجليزي 
+                                                <br>
+                                                your name is: [his/her name] and your age: {his/her age} and your favourite is (* his/her favourite)
+                                            </span>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="dropdown2"><h4><span>window.confirm()</span></h4>
+                                
+                                </li>
+                                <li class="dropdown2"><h4><span>console.log()</span></h4>
+                                
+                                </li>
+                                <li class="dropdown2"><h4><span>document.write()</span></h4>
+                                
+                                </li>
+                                <li class="dropdown2"><h4><span>innerHTML</span></h4>
+                                
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3> جمل لإستقبال بيانات من المستخدم لاستخدامها في الموقع | Input Sentences</h3>
+                            <ol>
+                                <li class="dropdown2"><h4><span>window.prompet()</span></h4>
+                                    <ol type="I">
+                                        <li>prompet('Enter Your Grade')</li>
+                                        <li>Example <br>
+                                            let <span class="var">password</span> = 1362; <br>
+                                            let <span class="var">userPassword</span> = prompet('Enter Your Password?'); <br>
+                                            if(userPassword === password) { <br>
+                                                alert('Your Login Successful &#x1F600'); /* علشان تظهر إيموجي اكتب  "& + #x1F600"*/<br>
+                                            } <br>
+                                            else { <br>
+                                                alert('Your Login Failed &#x1F621'); /* علشان تظهر إيموجي اكتب  "& + #x1F621"*/<br>
+                                            }
+                                        </li>
+                                        <li>Test
+                                            <br>
+                                            <span class="test">اعمل ثلاث متغيرات واطلب من المستخدم انه يدخل رقم واحفظه في متغير 
+                                                واطلب رقم تاني واحفظه في المتغير الثاني واجمع الرقمين في المتغير الثالث واطبع 
+                                                واطبع النتيجة في جملة اخراج مثلا alert
+                                                <br>
+                                                Enter Number 1: [5] <br>
+                                                Enter Number 2: [6] <br>
+                                                The SUM is (* 11); /* يطبع ناتج الجمع */
+                                            </span>
+                                        </li>
+                                    </ol>
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>المتغيرات أو أماكن في الذاكرة لتخزين قيم ستحتاجها مستقبلا | variables</h3>
+                            <ol>
+                                <li>var {var_name}|={value};</li>
+                                <li>let {variable_name}|={value};</li>
+                                <li>const {variable_name}|={value};</li>
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>قاعدة لو الشرطية لو عندي أكثر من أختيار وكل اختيار ليه فكرته | if</h3>
+                            <ol>
+                                <li>if(/*Condition | شرط*/) {/*Your Code | الأوامر في حالة تحقق الشرط*/}</li>
+                                <li>if(/*Condition | شرط*/) {/*Your Code | الأوامر في حالة تحقق الشرط*/}<br>
+                                    else{/*Your Code | الأوامر في حالة تحقق الشرط*/}
+                                </li>
+                                <li>if(/*Condition | شرط*/) {/*Your Code | الأوامر في حالة تحقق الشرط*/}<br>
+                               else if(/*Condition | شرط*/) {/*Your Code | الأوامر في حالة تحقق الشرط*/}<br>
+                               else if(/*Condition | شرط*/) {/*Your Code | الأوامر في حالة تحقق الشرط*/}<br>
+                               else if(/*Condition | شرط*/) {/*Your Code | الأوامر في حالة تحقق الشرط*/}<br>
+                                    else{/*Your Code | الأوامر في حالة تحقق الشرط*/}
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="dropdown"><h3>مصفوفة أو تجميع متغيرات كثيرة تحت مسمى واحد في مجموعة | Arrays</h3>
+                            <ol>
+                                <li>let {array_name}|=[value,value,value,...]</li>
+                            </ol>
+                        </li>
+                        <li  class="dropdown"><h3>التكرار تكرر فكرة أو عنصر أكثر من مرة الى أن يصل الى فشل الشرط | for</h3>
+                            <ol>
+                                <li>for(/*let variable=value متغير بقيمة ابتدائية*/; /*Condition شرط*/; /*Increment +|-/){Your Code | الأوامر المراد تكرارها}</li>
+                            </ol>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/JavaScript">
+        $('h3').click(function() {
+            $(this).siblings('ol').toggle();
+        });
+        $('h4').click(function() {
+            $(this).siblings('ol').toggle();
+        });
+        $('button.style-btn').click(function() {
+            $(this).siblings('div.style').toggle();
+        });
+        
+    </script>
+</body>
+</html>
